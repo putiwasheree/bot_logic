@@ -1,21 +1,22 @@
 import random
+import gen_pass
 
-def gen_pass(pass_length):
+def gen_pass(10):
     elements = "+-/*!&$#?=@<>"
     password = ""
 
-    for i in range(pass_length):
+    for i in range(10):
         password += random.choice(elements)
 
     return password
 
 
-def gen_emodji():
+def gen_emodji(10):
     emodji = ["\U0001f600", "\U0001f642", "\U0001F606", "\U0001F923"]
     return random.choice(emodji)
 
 
-def flip_coin():
+def flip_coin(10):
     flip = random.randint(0, 2)
     if flip == 0:
         return "HEADS"
@@ -23,6 +24,6 @@ def flip_coin():
         return "TAILS"
 
 
-#kak, saya mau bertanya
-maksud dari gen_pass(10) itu apa kak?
-saya ga paham?#
+# kak, saya mau bertanya
+# ,aksud gen pass disini fungsi nya apa kak?
+# saya ga paham, dan ada yang salah ga di kodingan saya kak?
